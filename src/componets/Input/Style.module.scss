@@ -1,0 +1,39 @@
+.div77 {
+  width: 20.3125rem;
+  height: 6.875rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 22px;
+    
+  
+    .label1{
+        color: var(--color-grey-0);
+        font-family: var(--font-inter);
+        font-size: .7612rem;
+        font-weight: 400;
+
+          }
+
+
+    .input5{
+      width: 19.3125rem;
+      height: 3rem;
+      border-radius: .25rem;
+      border: .0762rem solid var(--color-grey-0);
+      background-color: var(--color-grey-2);
+      margin-block-start: 10px;
+     
+      padding-left:  1rem;
+    }
+
+     .ppp{
+        height: 13px;
+        color: var(--color-negativa);
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: .75rem
+     }
+
+    
+
+};

@@ -6,17 +6,18 @@ import { useState } from "react";
 
 export const RouterMain = () => {
 
-    const [usuario, setUsuario] = useState({});
+    const [user, setUser] = useState({});
 
-    console.log(usuario);
+    
 
+    console.log(user);
     return(
         <>
         <Routes>
 
-            <Route path="/" element={<Login setUsuario={setUsuario}/>}/>
+            <Route path="/" element={<Login setUser={setUser}/>}/>
             <Route path="/register" element={<Register />}/>
-            <Route path="/dashboard" element={<Dashboard />}/>
+            <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser}/>}/>
  
         </Routes>
         </>

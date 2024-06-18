@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { formLoginSchema } from "./formLoginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "../Input"
 import { api } from './../../service/api';
+import Styles from "./Style.module.scss"
 
 
 
-export const FormLogin = ({setUsuario}) => {
+export const FormLogin = ({setUser}) => {
+
+
+  const navigate = useNavigate();
 
   const { register, handleSubmit, formState: { errors} } = useForm({
     resolver: zodResolver(formLoginSchema),
@@ -21,8 +25,12 @@ export const FormLogin = ({setUsuario}) => {
 
   const userLogin = async (loginData) => {
     try {
-      const respose = await api.post("/sessions", loginData);
-      setUsuario(respose);
+      const {data} = await api.post("/sessions", loginData);
+      setUser(data);
+      
+
+      localStorage.setItem("@logado", data.token);
+      navigate("/dashboard")
     } catch (error) {
       console.log(error);
     }
@@ -31,17 +39,17 @@ export const FormLogin = ({setUsuario}) => {
   };
     return(
         
-          <form onSubmit={handleSubmit(Submit)} noValidate>
-            <h1>Login</h1>
-            <div>
-               <Input type="email" label="E-mail" errors={errors.email} placeholder="Digite seu email" {...register("email")} />
-               <Input type="password" label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
-               <button type="submit">Entra</button>
+          <form className={Styles.form1} onSubmit={handleSubmit(Submit)} noValidate>
+            <h1 className={Styles.h11}>Login</h1>
+            <div className={Styles.div2}>
+               <Input className={Styles.input1} type="email" label="E-mail" errors={errors.email} placeholder="Digite seu email" {...register("email")} />
+               <Input className={Styles.input1} type="password" label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
+               <button className={Styles.buton1} type="submit">Entrar</button>
             </div>
-            <div>
-              <p>Ainda nao possui uma conta?</p>
+            <div className={Styles.div6}>
+              <p className={Styles.p1}>Ainda nao possui uma conta?</p>
               <Link to="/register">
-              <button>Cadastre-se</button>
+              <button className={Styles.buton2}>Cadastre-se</button>
               </Link>
             </div>
           </form>
