@@ -2,7 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { formLoginSchema } from "./formLoginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "../Input"
+import { InputPassword } from "../InputPassword"
+import { Input } from "../Input";
 import { api } from './../../service/api';
 import Styles from "./Style.module.scss"
 
@@ -26,7 +27,7 @@ export const FormLogin = ({setUser}) => {
   const userLogin = async (loginData) => {
     try {
       const {data} = await api.post("/sessions", loginData);
-      setUser(data);
+      setUser(data.user);
       
 
       localStorage.setItem("@logado", data.token);
@@ -43,7 +44,7 @@ export const FormLogin = ({setUser}) => {
             <h1 className={Styles.h11}>Login</h1>
             <div className={Styles.div2}>
                <Input className={Styles.input1} type="email" label="E-mail" errors={errors.email} placeholder="Digite seu email" {...register("email")} />
-               <Input className={Styles.input1} type="password" label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
+               <InputPassword className={Styles.input4} type="password" label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
                <button className={Styles.buton1} type="submit">Entrar</button>
             </div>
             <div className={Styles.div6}>

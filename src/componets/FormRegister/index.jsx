@@ -67,10 +67,10 @@ export const FormRegister = () => {
                         <label className={Styles.label5} htmlFor="couser_module">Selecionar modulo</label>
                         <select className={Styles.select1} name="couser_module" errors={errors.course_module}  id="course_module" {...register("course_module")}>
                             <option value="">Escolha o module</option>
-                            <option value="opcao1">Primeiro módulo (Introdução ao Frontend)</option>
-                            <option value="opcao2">Segundo módulo (Frontend Avançado)</option>
-                            <option value="opcao3">Terceiro módulo (Introdução ao Backend)</option>
-                            <option value="opcao4">Quarto módulo (Backend Avançado)</option>
+                            <option value="(Introdução ao Frontend)">Primeiro módulo (Introdução ao Frontend)</option>
+                            <option value="(Frontend Avançado)2">Segundo módulo (Frontend Avançado)</option>
+                            <option value="(Introdução ao Backend)">Terceiro módulo (Introdução ao Backend)</option>
+                            <option value="(Backend Avançado)">Quarto módulo (Backend Avançado)</option>
                         </select>
                         {errors.course_module && <p>{course_module.message}</p>}
                         

@@ -16,8 +16,10 @@ export const Dashboard = ({user, setUser}) => {
         <HeaderDashboard setUser={setUser}/>
         <main className={Styles.man2}>
             <div className={Styles.div0}>
-               <p className={Styles.pName}> Ola, {user.name}</p>
-               <p className={Styles.pCouse}>{user.course_module}</p>
+                
+                    <p className={Styles.pName}> Ola, {user?.name}</p>
+                    <p className={Styles.pCouse}>{user?.course_module}</p>
+             
             </div>
 
             <h2 className={Styles.h2F}>Que pena! Estamos em desenvolvimento :(</h2>
