@@ -10,7 +10,7 @@ export const RouterMain = () => {
 
     
 
-    console.log(user);
+
     return(
         <>
         <Routes>

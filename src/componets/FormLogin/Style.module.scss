@@ -1,8 +1,10 @@
 .form1{
     width: 23.0625rem;
+    height: 31.375rem;
     display: flex;
     flex-direction: column;
     border-radius: .25rem;
+    background-color: var(--color-grey-3);
 
 
 
@@ -68,7 +70,7 @@
             width: 20.3125rem;
 
 
-              .p1{
+              .p1lp{
                 width: 11.625rem;
                 height: 1.125rem;
                 font-family: var(--font-inter);
@@ -79,7 +81,7 @@
                 margin-left: 4.8125rem;
               }
 
-              .buton2{
+              .buton2b{
                 width: 20.25rem;
                 height: 3rem;
                 border-radius: .25rem;
@@ -94,4 +96,103 @@
         }    
 
 }
+
+@media(max-width: 448px){
+
+
+  .form1{
+    width: 18.5rem;
+    height: 25.125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+    background-color: var(--color-grey-3);
+
+
+
+            .h11{
+            
+                width: 2.4569rem;
+                height: 1.4038rem;
+                font-family: var(--font-inter);
+                font-weight: 700;
+                font-size: .9025rem;
+                color: var(--color-grey-0);
+                margin-inline: 8rem;
+                margin-top: 2.1056rem;
+
+            }
+
+            .div2{
+
+                width: 18.5rem;
+                height: 14.875rem;
+                display: flex;
+                flex-direction: column;
+                
+        
+                        
+
+                                
+
+                                
+
+                      .buton1{
+                                  width: 16.2437rem;
+                                  height: 2.4063rem;
+                                  border-radius: .2537rem;
+                                  border: .0612rem solid #FF577F;
+                                  background-color: var(--color-primary);
+                                  margin-left: .8144rem;
+                                  color: var(--color-grey-0);
+                                  font-family: var(--font-inter);
+                                  font-weight: 500;
+                                  font-size: .8019rem;
+                                  padding: 0px 17.92px 0px 17.92px;
+
+                                }
+
+
+            }
+
+        .div6{
+            display: flex;
+            flex-direction: column;
+            margin-inline: .8144rem;
+            width: 18.5rem;
+            height: 6.25rem ;
+
+
+                      .p1lp{
+                            width: 9.5231rem;
+                            height: .9025rem;
+                            font-family: var(--font-inter);
+                            font-size: .6019rem;
+                            font-weight: 600;
+                            color: var(--color-grey-1);
+                            
+                            margin-left: 3.8606rem;
+                          }
+
+                      .buton2b{
+                            width: 16.2437rem;
+                            height: 2.125rem;
+                            border-radius: .2006rem;
+                            border: 0.98px solid #868E96;
+                            background-color: var(--color-grey-1);
+                            color: var(--color-grey-0);
+                            font-family: var(--font-inter);
+                            font-weight: 500;
+                            font-size: .8019rem;
+                            
+                            
+                          }
+             }
+
+}
+
+};
+
+
+
 

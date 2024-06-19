@@ -28,6 +28,7 @@
 
      .ppp{
         height: 13px;
+        margin-top: .9375rem;
         color: var(--color-negativa);
         font-family: var(--font-inter);
         font-weight: 400;
@@ -37,3 +38,47 @@
     
 
 };
+
+@media(max-width: 448px){
+
+  .div77 {
+    width: 18.5rem;
+    height: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 12px;
+      
+    
+      .label1{
+          color: var(--color-grey-0);
+          font-family: var(--font-inter);
+          font-size: .6106rem;
+          font-weight: 400;
+  
+            }
+  
+  
+      .input5{
+        width: 15.5rem;
+        height: 2.155rem;
+        border-radius: .2006rem;
+        border: .0762rem solid var(--color-grey-0);
+        background-color: var(--color-grey-2);
+        margin-block-start: 17px;
+        color: var(--color-grey-1);
+        padding-left:  .8125rem;
+      }
+  
+       .ppp{
+          height: 13px;
+          margin-top: .75rem;
+          color: var(--color-negativa);
+          font-family: var(--font-inter);
+          font-weight: 400;
+          font-size: .75rem;
+       }
+  
+      
+  
+  };
+}

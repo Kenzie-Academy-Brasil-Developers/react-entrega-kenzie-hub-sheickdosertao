@@ -72,17 +72,10 @@ export const FormRegister = () => {
                             <option value="(Introdução ao Backend)">Terceiro módulo (Introdução ao Backend)</option>
                             <option value="(Backend Avançado)">Quarto módulo (Backend Avançado)</option>
                         </select>
-                        {errors.course_module && <p>{course_module.message}</p>}
-                        
-
                     
                         <button className={Styles.buton12} type="submit">{loading ? "Cadastrando" : "Cadastrar" }</button>
-                        
-                    
-                    
-                    
-                    </div>
-                </form>   
+                  </div>
+                </form>
         </main>
        
     </>

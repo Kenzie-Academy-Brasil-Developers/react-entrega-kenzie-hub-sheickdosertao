@@ -1,5 +1,5 @@
 import { RouterMain } from "./route/Routermain"
-import "./styles/GlobalStyles.scss"
+import "./styles/index.scss"
 
 
 function App() {

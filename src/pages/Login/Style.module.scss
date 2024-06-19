@@ -9,17 +9,25 @@
 
 
 
-            > .div1{
-                display: flex;
-                width: 23.0625rem;
-                height: 31.375rem;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 8.3125rem;
-                
-                background-color: var(--color-grey-3);
-                
-            }
+
+}
+
+@media(max-width: 28rem ){
+
+    .man{
+
+        width: 20rem;
+        height: 35.5rem;
+        background-color: var(--color-grey-4);
+        display: flex;
+        justify-content: center;
+    
+    
+    
+    
+             
+    }
+
 
 }
 

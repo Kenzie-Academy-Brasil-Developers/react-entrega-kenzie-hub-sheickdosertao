@@ -43,14 +43,14 @@ export const FormLogin = ({setUser}) => {
           <form className={Styles.form1} onSubmit={handleSubmit(Submit)} noValidate>
             <h1 className={Styles.h11}>Login</h1>
             <div className={Styles.div2}>
-               <Input className={Styles.input1} type="email" label="E-mail" errors={errors.email} placeholder="Digite seu email" {...register("email")} />
-               <InputPassword className={Styles.input4} type="password" label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
+               <Input  type="email" label="E-mail" errors={errors.email} placeholder="Digite seu email" {...register("email")} />
+               <InputPassword label="Senha" errors={errors.password} placeholder="Digite sua senha" {...register("password")}/>
                <button className={Styles.buton1} type="submit">Entrar</button>
             </div>
             <div className={Styles.div6}>
-              <p className={Styles.p1}>Ainda nao possui uma conta?</p>
+              <p className={Styles.p1lp}>Ainda nao possui uma conta?</p>
               <Link to="/register">
-              <button className={Styles.buton2}>Cadastre-se</button>
+              <button className={Styles.buton2b}>Cadastre-se</button>
               </Link>
             </div>
           </form>

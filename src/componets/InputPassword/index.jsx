@@ -14,7 +14,7 @@ export const InputPassword = forwardRef(({ label, errors, ...rest}, ref) => {
                    type="button" onClick={() => setAbilities(!abilities)}>{abilities ? <MdVisibilityOff /> : <MdVisibility /> }</button>
              </div>
              
-            {errors ? <p className={Styles.ppp}>{errors.message}</p> : null}
+            {errors ? <p className={Styles.ppp7}>{errors.message}</p> : null}
         </div>
        
     );

@@ -8,10 +8,8 @@ export const Login = ({setUser}) => {
       
         <HeaderLogin/>
         <main className={Styles.man}>
-          <div className={Styles.div1}>
                <FormLogin setUser={setUser}/>
-          </div>
-         </main>
+        </main>
       </>
       
    

@@ -39,14 +39,16 @@
                   right: 12.21px;
                   top: 25px;
                   border: none;
+                  color: var(--color-grey-2);
                   
 
                 }
       }
     
 
-     .ppp{
+     .ppp7{
         height: 13px;
+        margin-top: .9375rem;
         color: var(--color-negativa);
         font-family: var(--font-inter);
         font-weight: 400;
@@ -56,4 +58,70 @@
     
 
 };
- 
+
+
+@media(max-width: 448px){
+  .div87 {
+        width: 16.5413rem;
+        height: 6.875rem;
+        display: flex;
+        flex-direction: column;
+        margin-inline: 12px;
+
+          
+        
+          .label19{
+              color: var(--color-grey-0);
+              font-family: var(--font-inter);
+              font-size: .6106rem;
+              font-weight: 400;
+
+                }
+
+          .md{
+              position: relative;
+              height: 2.5rem;
+              width: 16.5rem;
+              
+
+
+                    >input{
+                          width: 248px;
+                          height: 2.20rem;
+                          border-radius: .25rem;
+                          border: .0762rem solid var(--color-grey-0);
+                          background-color: var(--color-grey-2);
+                          margin-block-start: 10px;
+                          color: var(--color-grey-1);
+                          padding-left:  .8144rem;
+                          
+                    }
+
+                      .btn{
+                        font-weight: 900;
+                        font-size: .6019rem;
+                        position: absolute;
+                        background-color: transparent;
+                        right: 12.21px;
+                        top: 25px;
+                        border: none;
+                        color: var(--color-grey-1);
+                        
+
+                      }
+            }
+          
+
+          .ppp7{
+              height: 13px;
+              margin-top: .75rem;
+              color: var(--color-negativa);
+              font-family: var(--font-inter);
+              font-weight: 400;
+              font-size: .75rem
+          }
+
+          
+
+      };
+}
