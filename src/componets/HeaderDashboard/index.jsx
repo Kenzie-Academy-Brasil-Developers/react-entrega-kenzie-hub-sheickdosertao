@@ -23,7 +23,7 @@ export const HeaderDashboard = ({setUser}) => {
     return(
         <header className={Styles.header10}>
             <div className={Styles.divHeader}>
-                <img src={Svg} alt="Kenzie Hub" />
+                <img className={Styles.imagem44} src={Svg} alt="Kenzie Hub" />
                 <button className={Styles.buton7} onClick={logout}>Sair</button>
             </div>
         </header>

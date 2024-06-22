@@ -24,3 +24,36 @@
 
          }
 }
+
+@media(max-width:28rem){
+
+   .headerRegister{
+      background-color: var(--color-grey-4);
+      width: 20rem;
+
+  
+  
+           .img2{
+              margin-inline: .85rem;
+              width: 6.0994rem;
+              height: 1.0562rem;
+              margin-top: 3.5906rem;
+           }
+      
+  
+           .buton66{
+              width: 4.9713rem;
+              height: 1.9969rem;
+              margin-left: 104px;
+              margin-top: 3.0913rem;
+              border-radius: .25rem;
+              background-color: var(--color-grey-3);
+              color: var(--color-grey-0);
+              font-family: var(--font-inter);
+              font-weight: 600;
+              font-size: .5994rem;
+              border: none;
+  
+           }
+  }
+}

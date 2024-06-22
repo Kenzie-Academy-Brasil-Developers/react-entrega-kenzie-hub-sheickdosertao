@@ -12,20 +12,60 @@
               justify-content: space-around;
               align-items: center;
               height: 4.5rem;
+
+
+
+              .imgag44{
+                margin-left: 20.6875rem;
+
+              }
               
 
 
-          .buton7{
-            width: 3.4681rem;
-            height: 2rem;
-            border-radius: .25rem;
-            background-color: var(--color-grey-3);
-            color: var(--color-grey-0);
-            font-family: var(--font-inter);
-            font-weight: 600;
-            font-size: .75rem;
-          }
+            .buton7{
+                  width: 3.4681rem;
+                  height: 2rem;
+                  border-radius: .25rem;
+                  background-color: var(--color-grey-3);
+                  color: var(--color-grey-0);
+                  font-family: var(--font-inter);
+                  font-weight: 600;
+                  font-size: .75rem;
+                }
 
 }
 }
 
+@media(max-width: 28rem){
+
+  .header10{
+
+
+
+    background-color: var(--color-grey-4);
+     width: 20rem;
+     height: 4.5625rem;
+  
+  
+          .divHeader{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 4.5rem;
+                
+  
+  
+            .buton7{
+              width: 3.4681rem;
+              height: 2rem;
+              border-radius: .25rem;
+              background-color: var(--color-grey-3);
+              color: var(--color-grey-0);
+              font-family: var(--font-inter);
+              font-weight: 600;
+              font-size: .75rem;
+            }
+  
+  }
+  }
+}

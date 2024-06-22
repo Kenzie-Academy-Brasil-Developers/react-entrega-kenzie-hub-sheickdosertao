@@ -1,6 +1,6 @@
 .div77 {
   width: 20.3125rem;
-  height: 6.875rem;
+  height: 5.875rem;
   display: flex;
   flex-direction: column;
   margin-inline: 22px;
@@ -28,7 +28,8 @@
 
      .ppp{
         height: 13px;
-        margin-top: .9375rem;
+        margin-top: .625rem;
+        margin-bottom: 10px;
         color: var(--color-negativa);
         font-family: var(--font-inter);
         font-weight: 400;
@@ -43,7 +44,7 @@
 
   .div77 {
     width: 18.5rem;
-    height: 6.875rem;
+    height: 5.875rem;
     display: flex;
     flex-direction: column;
     margin-inline: 12px;
@@ -54,17 +55,19 @@
           font-family: var(--font-inter);
           font-size: .6106rem;
           font-weight: 400;
+        
   
             }
   
   
       .input5{
-        width: 15.5rem;
+        width: 15.375rem;
         height: 2.155rem;
         border-radius: .2006rem;
         border: .0762rem solid var(--color-grey-0);
         background-color: var(--color-grey-2);
-        margin-block-start: 17px;
+        margin-top: 1.0625rem;
+      
         color: var(--color-grey-1);
         padding-left:  .8125rem;
       }
