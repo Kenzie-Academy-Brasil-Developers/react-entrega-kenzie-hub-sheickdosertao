@@ -1,10 +1,13 @@
-.form1{
-    width: 23.0625rem;
+@media screen and (min-width: 90rem ){
+  .form1{
+    width: 100%;
+    max-width: 23.0625rem;
     height: 31.375rem;
     display: flex;
     flex-direction: column;
     border-radius: .25rem;
     background-color: var(--color-grey-3);
+    margin: 0 auto;
 
 
 
@@ -27,26 +30,7 @@
                 display: flex;
                 flex-direction: column;
                 
-        
-            .input1{
-
-                width: 19.3125rem;
-                height: 3rem;
-                border-radius: .25rem;
-                border: .0762rem solid var(--color-grey-0);
-                background-color: var(--color-grey-2);
-                margin-block-start: 10px;
-              
-               
-                padding-left:  1rem;
-              }
-              
-
-                      
-
-                      
-
-            .buton1{
+                 .buton1{
                          width: 20.25rem;
                          height: 3rem;
                          border-radius: .2537rem;
@@ -97,7 +81,109 @@
 
 }
 
-@media(max-width: 448px){
+};
+
+
+@media ( min-width: 48rem) and (max-width: 89.9375rem ){
+
+
+  .form1{
+    width: 100%;
+    max-width: 23.0625rem;
+    height: 31.125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+    background-color: var(--color-grey-3);
+    margin: 0 auto;
+
+
+
+            .h11{
+            
+                width: 2.4569rem;
+                height: 1.4038rem;
+                font-family: var(--font-inter);
+                font-weight: 700;
+                font-size: .9025rem;
+                color: var(--color-grey-0);
+                margin-inline: 9rem;
+                margin-top: 2.1056rem;
+
+            }
+
+            .div2{
+
+                width: 20.3125rem;
+
+                display: flex;
+                flex-direction: column;
+                
+                
+                          .buton1{
+                                  width: 20.25rem;
+                                  height: 2.75rem;
+                                  border-radius: .2537rem;
+                                  border: .0612rem solid #FF577F;
+                                  background-color: var(--color-primary);
+                                  margin-left: 1.375rem;
+                                  color: var(--color-grey-0);
+                                  font-family: var(--font-inter);
+                                  font-weight: 500;
+                                  font-size: .8019rem;
+                                  padding: 0px 17.92px 0px 17.92px;
+
+                                }
+
+
+            }
+
+        .div6{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            width: 20.3125rem;
+            height: 8.25rem ;
+
+
+                      .p1lp{
+                            width: 9.5231rem;
+                            height: .9025rem;
+                            font-family: var(--font-inter);
+                            font-size: .6019rem;
+                            font-weight: 600;
+                            color: var(--color-grey-1);
+                        
+                            margin-left: 6.8606rem;
+                          }
+
+                      .buton2b{
+                            width: 20.25rem;
+                            height: 2.75rem;
+                            border-radius: .2006rem;
+                            border: 0.98px solid #868E96;
+                            background-color: var(--color-grey-1);
+                            color: var(--color-grey-0);
+                            font-family: var(--font-inter);
+                            font-weight: 500;
+                            font-size: .8019rem;
+                            margin-left: 1.375rem;
+                            margin-top: 1rem;
+                            
+                            
+                          }
+             }
+
+}
+
+};
+
+
+
+
+
+
+@media(max-width: 47.9375rem){
 
 
   .form1{
@@ -129,15 +215,8 @@
                 height: 14.875rem;
                 display: flex;
                 flex-direction: column;
-                
-        
-                        
-
-                                
-
-                                
-
-                      .buton1{
+                            
+                         .buton1{
                                   width: 16.2437rem;
                                   height: 2.4063rem;
                                   border-radius: .2537rem;
@@ -151,9 +230,7 @@
                                   padding: 0px 17.92px 0px 17.92px;
 
                                 }
-
-
-            }
+                 }
 
         .div6{
             display: flex;
@@ -170,7 +247,7 @@
                             font-size: .6019rem;
                             font-weight: 600;
                             color: var(--color-grey-1);
-                            
+                            margin-top: 1rem;
                             margin-left: 3.8606rem;
                           }
 
@@ -184,6 +261,7 @@
                             font-family: var(--font-inter);
                             font-weight: 500;
                             font-size: .8019rem;
+                            margin-top: 1rem
                             
                             
                           }

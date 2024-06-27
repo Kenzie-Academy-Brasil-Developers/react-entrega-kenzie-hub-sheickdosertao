@@ -1,17 +1,11 @@
-import Styles from "./Style.module.scss"
+import Styles from "./Style.module.scss";
 import { HeaderDashboard } from './../../componets/HeaderDashboard/index';
 
 
 
 export const Dashboard = ({user, setUser}) => {
 
-    
-
-    
-     
-    
-
-    return(
+ return(
         <>
         <HeaderDashboard setUser={setUser}/>
         <main className={Styles.man2}>
@@ -27,5 +21,5 @@ export const Dashboard = ({user, setUser}) => {
         </main>
        
         </>
-    )
+    );
 };

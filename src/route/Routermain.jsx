@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
 import { Dashboard } from "../pages/Dash";
@@ -8,18 +8,15 @@ export const RouterMain = () => {
 
     const [user, setUser] = useState({});
 
-    
-
-
     return(
         <>
         <Routes>
 
-            <Route path="/" element={<Login setUser={setUser}/>}/>
-            <Route path="/register" element={<Register />}/>
-            <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser}/>}/>
+            <Route path="/" element={<Login setUser={setUser}/>}/>;
+            <Route path="/register" element={<Register />}/>;
+            <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser}/>}/>;
  
         </Routes>
         </>
-    )
+    );
 };

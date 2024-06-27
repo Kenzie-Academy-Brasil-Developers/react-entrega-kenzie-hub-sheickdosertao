@@ -2,15 +2,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { formLoginSchema } from "./formLoginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { InputPassword } from "../InputPassword"
+import { InputPassword } from "../InputPassword";
 import { Input } from "../Input";
 import { api } from './../../service/api';
-import Styles from "./Style.module.scss"
+import Styles from "./Style.module.scss";
 
 
 
 export const FormLogin = ({setUser}) => {
-
 
   const navigate = useNavigate();
 
@@ -20,11 +19,9 @@ export const FormLogin = ({setUser}) => {
 
   const Submit = (loginData) => {
     userLogin(loginData);
+   };
 
-  };
-
-
-  const userLogin = async (loginData) => {
+   const userLogin = async (loginData) => {
     try {
       const {data} = await api.post("/sessions", loginData);
       setUser(data.user);
@@ -36,8 +33,8 @@ export const FormLogin = ({setUser}) => {
       console.log(error);
     }
     
-    
-  };
+    }; 
+
     return(
         
           <form className={Styles.form1} onSubmit={handleSubmit(Submit)} noValidate>
@@ -54,6 +51,5 @@ export const FormLogin = ({setUser}) => {
               </Link>
             </div>
           </form>
-        
-    );
+         );
 };

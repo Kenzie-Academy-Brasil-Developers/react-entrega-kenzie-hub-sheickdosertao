@@ -1,5 +1,7 @@
-.man2{
-    width: 90rem;
+@media screen and (min-width: 90rem ){
+  .man2{
+    width: 100%;
+    min-width: 90rem;
     height: 45rem;
 
     background-color: var(--color-grey-4);
@@ -66,9 +68,82 @@
 }
 
 
-@media(max-width: 28rem){
+}
+
+@media screen and (min-width: 768px) and (max-width: 89.9375rem) {
   .man2{
-    width: 20rem;
+    width: 100%;
+    height: 45rem;
+
+    background-color: var(--color-grey-4);
+
+      .div0{
+        display: flex;
+        width: 100%;
+        height: 7.375rem;
+        border: 1px solid var(--color-grey-3);
+
+
+        .div0:hover{
+          border: 2px solid var(--color-grey-3);
+        }
+
+
+        
+
+            .pName{
+                width: 13.4375rem;
+                height: 1.75rem;
+                font-family: var(--font-inter);
+                font-weight: 700;
+                font-size: 18px;
+                color: var(--color-grey-0);
+                margin-left: clamp(7.5rem, -1.161rem + 23.095vw, 19.625rem);
+                margin-top: 2.8125rem;
+            }
+
+            .pCouse{
+                width: 15.25rem;
+                height: 1.375rem;
+                font-family: var(--font-inter);
+                font-weight: 400;
+                font-size: 1.125rem;
+                color: var(--color-grey-0);
+                margin-top: 2.8125rem;
+                margin-left: clamp(12rem, 3.071rem + 23.81vw, 24.5rem).5rem;
+            }
+
+      }
+
+      .h2F{
+        width: 23.4375rem;
+        height: 1.75rem;
+        margin-left:  clamp(7.5rem, -1.161rem + 23.095vw, 19.625rem);
+        font-family: var(--font-inter);
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: var(--color-grey-0);
+        margin-top: 2.3125rem;
+      }
+
+      .pF{
+        width: 34.375rem;
+        height: 1.5625rem;
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--color-grey-0);
+        margin-left:  clamp(7.5rem, -1.161rem + 23.095vw, 19.625rem);
+        margin-top: 1.4375rem;
+      }
+}
+
+}
+
+
+@media screen and (max-width: 47.9375rem){
+  .man2{
+    width: 100%;
     height: 39.6875rem;
 
     background-color: var(--color-grey-4);
@@ -76,7 +151,7 @@
       .div0{
         display: flex;
         flex-direction: column;
-        width: 20rem;
+        width: 100%;
         height: 8.125rem;
         border: 1px solid var(--color-grey-3);
         line-height: 1.75rem;

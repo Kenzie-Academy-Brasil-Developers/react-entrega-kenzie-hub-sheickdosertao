@@ -4,91 +4,80 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formRegisterSchema } from "./formeRegisterSchema";
 import { api } from './../../service/api';
-import {  useState } from "react";
+import {    useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from "./Style.module.scss";
 import {  ToastContainer ,  toast }  from 'react-toastify' ;
 import  'react-toastify/dist/ReactToastify.css' ;
 
 
-
-
-
-
-
 export const FormRegister = () => {
    
+   const [loading, setLoading] = useState(false);
    
-    
-
-    const [loading, setLoading] = useState(false);
-   
-   
-
-    const { register, handleSubmit, formState: { errors }} = useForm({
+   const { register, handleSubmit, formState: { errors }} = useForm({
         resolver: zodResolver(formRegisterSchema),
     });
    
     const navigate = useNavigate();
 
-
     const submit = (formData ) => {
         userRegister(formData);
     };
   
-    const  notify  =  ( )  =>  {
-      toast.success("Conta criada com sucesso!", {
-        position: "top-center", autoClos: 8000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-      toast.error("Conta criada com sucesso!", {
-        position: "top-center", autoClos: 8000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,});
+
+
+    const notify = (errors, success) => {
+      if (success) { 
+        toast.success('Conta criada com sucesso!'+ (success.message || 'deu certo!'), {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        console.log("success", success);
+      } else if (errors) {
+        toast.error('Erro ao criar conta: ' + (errors.message || 'Erro desconhecido'), {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        console.log("Erro:", errors);
+      }
     };
 
   
+    
 
-    const userRegister = async ({ name, email, password, bio, contact, course_module }) => {
+  const userRegister = async ({ name, email, password, bio, contact, course_module }) => {
 
         try {
             setLoading(true);
              const {data} =  await api.post("/users", { name, email, password, bio, contact, course_module });
-           
-        
+            notify(null, data);
              navigate("/");
             
-        } catch (error) {
+            } catch (error) {
              console.log(errors);
-    
-             
-        }finally{
+             notify(error);
+            }finally{
             setLoading(false);
-        }
-     
-
-    };
+            }
+ };
  
-   
-
     return(
     <>
         <HeaderRegister/>
-    
         <main className={Styles.man3}>
         
-    
-
-  
-
-                <form className={Styles.form6} onSubmit={handleSubmit(submit)} noValidate>
+            <form className={Styles.form6} onSubmit={handleSubmit(submit)} noValidate>
                     <h1 className={Styles.h1T}>Crie sua conta</h1>
                     <p className={Styles.pS}>Rapido e gratis, vamos nessa</p>
                     
@@ -111,23 +100,22 @@ export const FormRegister = () => {
                             <option value="(Backend Avançado)">Quarto módulo (Backend Avançado)</option>
                         </select>
                     
-                        <button   onClick = { notify }  className={Styles.buton12} type="submit">{loading ? "Cadastrando" : "Cadastrar" }</button>
-                        < ToastContainer 
-                        theme="colored"
-                        position="top-center"
-                        autoClose={8000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClickrtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover />
+                        <button  className={Styles.buton12} type="submit" > {loading ? "Cadastrando" : "Cadastrar" }</button>
+                       
+                        < ToastContainer
+                              theme="colored"
+                              position="top-center"
+                              autoClose={8000}
+                              hideProgressBar={false}
+                              newestOnTop={false}
+                              closeOnClickrtl={false}
+                              pauseOnFocusLoss
+                              draggable
+                              pauseOnHover />
                   </div>
                 </form>
                 
         </main>
-       
-    </>
-       
-    )
+ </>
+       );
 };

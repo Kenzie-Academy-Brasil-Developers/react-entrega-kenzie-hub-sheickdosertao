@@ -1,5 +1,5 @@
 import svg from "../../assets/icon1/Logo.svg";
-import Styles from "./Style.module.scss"
+import Styles from "./Style.module.scss";
 
 export const HeaderLogin = () => {
     return(

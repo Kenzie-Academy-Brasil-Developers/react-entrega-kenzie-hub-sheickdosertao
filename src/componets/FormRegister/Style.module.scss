@@ -1,12 +1,10 @@
-.man3{
+@media screen and (min-width: 90rem){
+    .man3{
 
-    width: 90rem;
+    width: 100%;
     height: 69.6875rem;
     background-color: var(--color-grey-4);
-
-
-
-    
+   
 
 
 
@@ -19,7 +17,7 @@
     display:flex;
     flex-direction: column;
     margin-inline: 33.4375rem;
-    
+     margin: 0 auto;
             .h1T{
                 width: 7.9375rem;
                 height: 1.75rem;
@@ -105,130 +103,248 @@
                         margin-top: 1.375rem;
 
                     }
-                
-
-
-               }
+                 }
 
 }
 }
 
+};
 
-@media(max-width: 28rem){
-
+@media screen and (min-width: 768px) and (max-width: 89.9375rem){
     .man3{
 
-        width: 20rem;
-        height: 54.3125rem;
+        width: 100%;
+        height: 69.6875rem;
+        display: flex;
+        justify-content: center;
         background-color: var(--color-grey-4);
-    
-    
-    
-    
-        .form6{
-    
-                    width: 18.4894rem;
-                    height: 49.3125rem;
+        
+                
+                .form6{
+                
+                    width: 23.125rem;
+                    height: 55.6994rem;
                     border-radius: .25rem;
                     background-color: var(--color-grey-3);
                     display:flex;
                     flex-direction: column;
-                    margin-inline: .75rem;
+                
                     
                             .h1T{
-                                width: 6.3125rem;
-                                height: 1.375rem;
+                                width: 7.9375rem;
+                                height: 1.75rem;
                                 font-family: var(--font-inter);
                                 font-weight: 700;
-                                font-size: .8994rem;
+                                font-size: 1.125rem;
                                 color: var(--color-grey-0);
-                                margin-left: 6.0713rem;
-                                margin-top: 2.0987rem;
+                                margin-left: 7.5938rem;
+                                margin-top: 2.625rem;
                             }
                             
                             .pS{
-                                    width: 8.295rem;
-                                    height: 1.0994rem;
+                                    width: 10.375rem;
+                                    height: 1.375rem;
                                     font-family: var(--font-inter);
-                                    font-size: .5994rem;
+                                    font-size: .75rem;
                                     font-weight: 400;
                                     color: var(--color-grey-1);
-                                    margin-left: 5.0969rem;
-                                    margin-top: 1.0994rem;
+                                    margin-left: 6.375rem;
+                                    margin-top: 1.375rem;
                 
                             }
                 
                             .div9{
                                 
-                                width: 18.5rem;
-                                height: 42.25rem;
+                                width: 23.125rem;
+                                height: 47.5rem;
                                 display: flex;
                                 flex-direction: column;
-                                margin-top: 1.0994rem;
-                                margin-left: .75rem;
+                                margin-top: 1.375rem;
                 
                 
-                                  
+                                    .label5{
+                                            color: var(--color-grey-0);
+                                            margin-left: 1.375rem;
+                                            font-family: var(--font-inter);
+                                            font-weight: 400;
+                                            font-size: 12.18px;
+                                            width: 7.1875rem;
                 
-                                .label5{
-                                    color: var(--color-grey-0);
-                                    margin-left: .70rem;
-                                    font-family: var(--font-inter);
-                                    font-weight: 400;
-                                    font-size: 9.74px;
-                                    width: 8.75rem;}
+                                    }
                 
                                     .textarea1{
-                                        width: 15.375rem;
-                                        height: 1.75rem;
-                                        border-radius: .2rem;
-                                        border: 0.97px solid #343B41;
-                                        padding-left: .8119rem;
-                                        padding-top: 7px;
-                                        font-family: var(--font-inter);
-                                        font-size: .8119rem;
-                                        font-weight: 400;
-                                        color: var(--color-grey-1);
-                                        background-color: var(--color-grey-2);
-                                        margin-left: .70rem;
-                                        
+                                            width: 19.3125rem;
+                                            height: 1.8125rem;
+                                            border-radius: .25rem;
+                                            border: .0762rem;
+                                            padding-left: 1rem;
+                                            padding-top: .9375rem;
+                                            font-family: var(--font-inter);
+                                            font-size: 1.015rem;
+                                            font-weight: 400;
+                                            color: var(--color-grey-1);
+                                            background-color: var(--color-grey-2);
+                                            margin-left: 1.375rem;
+                                            margin-block: 1rem;
                                     }
                 
                                     .select1{
-                                        width: 16.4375rem;
-                                        height: 2.1875rem;
-                                        border-radius: .2rem;
-                                        border: 0.97px solid #343B41;
-                                        color: var(--color-grey-1);
-                                        background-color: var(--color-grey-2);
-                                        margin-left: .70rem;
-                                       
-                                        padding-left: .8119rem;
+                                            width: 20.3125rem;
+                                            height: 3rem;
+                                            border-radius: .25rem;
+                                            border: .0762rem;
+                                            color: var(--color-grey-1);
+                                            background-color: var(--color-grey-2);
+                                            margin-left: 1.25rem;
+                                            margin-top: 10px;
+                                            padding-left: 1rem;
                 
                                     }
                 
                                     .buton12{
-                                        width: 16.4375rem;
-                                        height: 2.375rem;
-                                        border-radius: .25rem;
-                                        border: .0762rem;
-                                        background-color: var( --color-primary-negativa);
-                                        color: var(--color-grey-0);
-                                        font-family: var(--font-inter);
-                                        font-size: 16px;
-                                        font-weight: 500;
-                                        margin-left: .70rem;
-                                        margin-top: 1.375rem;
-                
+                                            width: 20.375rem;
+                                            height: 2.8125rem;
+                                            border-radius: .25rem;
+                                            border: .0762rem;
+                                            background-color: var( --color-primary-negativa);
+                                            color: var(--color-grey-0);
+                                            font-family: var(--font-inter);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            margin-left: 1.25rem;
+                                            margin-top: 1.375rem;
+                    
                                     }
-                                
-                
-                
+                                }
                             }
+                };
                 
-                }
-                }
-}
+};
+
+
+@media screen and (max-width: 47.9375rem ){
+
+    .man3{
+
+        width:100%;
+        height: 54.3125rem;
+        background-color: var(--color-grey-4);
+        display: flex;
+        justify-content: center;
+    
+                  .form6{
+        
+                        width: 370px;
+                        height: 49.3125rem;
+                        border-radius: .25rem;
+                        background-color: var(--color-grey-3);
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                       
+                        
+                       
+                        
+                                .h1T{
+                                    width: 170px;
+                                    height: 1.375rem;
+                                    font-family: var(--font-inter);
+                                    font-weight: 700;
+                                    font-size: clamp(0.875rem, NaNrem + NaNvw, 1.125rem);
+                                    color: var(--color-grey-0);
+                                    margin-top: 2.0987rem;
+                                    margin-left: 120px;
+                                    
+                                }
+                                
+                                .pS{
+                                        width: 10.625rem;
+                                        height: 1.0994rem;
+                                        font-family: var(--font-inter);
+                                        font-size: .5994rem;
+                                        font-weight: 400;
+                                        color: var(--color-grey-1);
+                                        margin-left: 114px;
+                                        margin-top: 1.0994rem;
+                    
+                                }
+                    
+                                .div9{
+                                    
+                                    width: 22.4375rem;
+                                    height: 42.25rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 40px;
+                                    margin-top: 1.0994rem;
+                                
+                    
+                    
+                                    
+                    
+                                    .label5{
+                                        color: var(--color-grey-0);
+                                        margin-left: 1.375rem;
+                                        font-family: var(--font-inter);
+                                        font-weight: 400;
+                                        font-size: 9.74px;
+                                        width: 8.75rem;
+                                        margin-left: .70rem;
+                                    }
+                    
+                                        .textarea1{
+                                            width: 15.6875rem;
+                                            height: 1.75rem;
+                                            border-radius: .2rem;
+                                            border: 0.97px solid #343B41;
+                                            padding-left: .8119rem;
+                                            padding-top: 7px;
+                                            font-family: var(--font-inter);
+                                            font-size: .8119rem;
+                                            font-weight: 400;
+                                            color: var(--color-grey-1);
+                                            background-color: var(--color-grey-2);
+                                            margin-left: .70rem;
+                                            margin-top: 1rem;
+                                            margin-bottom: 1rem;
+                                            
+                                        }
+                    
+                                        .select1{
+                                            width: 16.4375rem;
+                                            height: 2.1875rem;
+                                            border-radius: .2rem;
+                                            border: 0.97px solid #343B41;
+                                            color: var(--color-grey-1);
+                                            background-color: var(--color-grey-2);
+                                            margin-left: .70rem;
+                                            margin-top: 1rem;
+                                            padding-left: .8119rem;
+                    
+                                        }
+                    
+                                        .buton12{
+                                            width: 16.4375rem;
+                                            height: 2.375rem;
+                                            border-radius: .25rem;
+                                            border: .0762rem;
+                                            background-color: var( --color-primary-negativa);
+                                            color: var(--color-grey-0);
+                                            font-family: var(--font-inter);
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            margin-left: .70rem;
+                                            margin-top: 1.375rem;
+                    
+                                        }
+                                    }
+                    }
+        };
+};
+
+
+
 
 
 

@@ -1,5 +1,5 @@
-import { FormLogin } from "../../componets/FormLogin"
-import { HeaderLogin } from "../../componets/HeaderLogin"
+import { FormLogin } from "../../componets/FormLogin";
+import { HeaderLogin } from "../../componets/HeaderLogin";
 import Styles from "./Style.module.scss";
 
 export const Login = ({setUser}) => {
@@ -11,7 +11,5 @@ export const Login = ({setUser}) => {
                <FormLogin setUser={setUser}/>
         </main>
       </>
-      
-   
-    )
-}
+      );
+};

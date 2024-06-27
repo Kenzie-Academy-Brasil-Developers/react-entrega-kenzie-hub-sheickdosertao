@@ -1,5 +1,5 @@
-import { RouterMain } from "./route/Routermain"
-import "./styles/index.scss"
+import { RouterMain } from "./route/Routermain";
+import "./styles/index.scss";
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <RouterMain/>
     </>
-  )
-}
+  );
+};
 
 export default App

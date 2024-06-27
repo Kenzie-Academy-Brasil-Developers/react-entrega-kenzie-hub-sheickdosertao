@@ -1,50 +1,92 @@
-.headerRegister{
-    background-color: var(--color-grey-4);
-    width: 90rem;
-    height: 7.9375rem;
-    display: flex;
-    align-items: center;
+@media screen and (min-width: 90rem){
+   .headerRegister{
+            background-color: var(--color-grey-4);
+            width: 100%;
+            height: 7.9375rem;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
 
 
-         .img2{
-            margin-inline: 33.4375rem;
-         }
-    
+                  .img2{
+                     width: 9.375rem;
+                  }
+            
 
-         .buton66{
-            width: 4.2181rem;
-            height: 2.5069rem;
-            margin-left: -355px;
-            border-radius: .25rem;
-            background-color: var(--color-grey-3);
-            color: var(--color-grey-0);
-            font-family: var(--font-inter);
-            font-weight: 600;
-            font-size: .75rem;
+                  .buton66{
+                     width: 4.2181rem;
+                     height: 2.5069rem;
+                     margin-left: 160px;
+                     border-radius: .25rem;
+                     background-color: var(--color-grey-3);
+                     color: var(--color-grey-0);
+                     font-family: var(--font-inter);
+                     font-weight: 600;
+                     font-size: .75rem;
+                     margin-top: 3rem;
 
-         }
+                  }
 }
 
-@media(max-width:28rem){
+};
+
+
+@media screen and (min-width: 48rem) and (max-width: 89.9375rem){
+   .headerRegister{
+
+            background-color: var(--color-grey-4);
+            width: 100%;
+            height: 7.9375rem;
+            display: flex;
+            justify-content: center;
+      
+      
+               .img2{
+            
+                  width: 9.375rem;
+               }
+            
+      
+               .buton66{
+                  width: 4.2181rem;
+                  height: 2.5069rem;
+                  margin-left: 170px;
+                  border-radius: .25rem;
+                  background-color: var(--color-grey-3);
+                  color: var(--color-grey-0);
+                  font-family: var(--font-inter);
+                  font-weight: 600;
+                  font-size: .75rem;
+                  margin-top: 3rem;
+      
+           }
+  }
+  
+}
+
+@media screen and (max-width: 47.9375rem){
 
    .headerRegister{
       background-color: var(--color-grey-4);
-      width: 20rem;
+      width: 100%;
+      height: 8.75rem;
+      display: flex;
+      justify-content: center;
 
   
   
            .img2{
-              margin-inline: .85rem;
-              width: 6.0994rem;
+              width: 7.0994rem;
               height: 1.0562rem;
               margin-top: 3.5906rem;
+              font-size: 24px;
            }
       
   
            .buton66{
               width: 4.9713rem;
               height: 1.9969rem;
-              margin-left: 104px;
+              margin-left: 188px;
               margin-top: 3.0913rem;
               border-radius: .25rem;
               background-color: var(--color-grey-3);
@@ -53,7 +95,7 @@
               font-weight: 600;
               font-size: .5994rem;
               border: none;
-  
+            
            }
   }
 }
